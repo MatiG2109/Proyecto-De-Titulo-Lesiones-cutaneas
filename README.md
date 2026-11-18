@@ -67,8 +67,8 @@ Lectura de los resultados (detalle y limitaciones en el informe):
 - Combinar todas las técnicas (E7) no suma: el mejor resultado fue el de la técnica aislada (E5a).
 - La literatura más cercana (MedFusionNet, ConvNeXt + ViT con fusión por atención) reporta 97,90 % en ISIC 2019; la diferencia sugiere que el mecanismo de fusión es un factor clave, y la concatenación simple es una limitación de esta propuesta.
 
-![Comparación de exactitud](figuras/comparacion_accuracy.png)
-![Matriz de confusión E5a](figuras/matriz_confusion_e5a.png)
+![Matriz de confusión, E5a (lote 16)](figuras/matriz_confusion.jpeg)
+![Matriz de confusión, fine-tuning completo (línea base)](figuras/matriz_confusion_finetuning.png)
 
 ## 3. Estructura del repositorio
 
