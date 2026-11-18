@@ -1,0 +1,89 @@
+Device: cuda
+Semilla de entrenamiento fijada: 1 (deterministic=False)
+Semilla del split estratificado: 42
+Escaneando dataset en: /work/matias.gallardo/dataset
+Train: 17731 | Val: 3800 | Test: 3800
+Pesos de clase (train): {'AK': 3.6513590812683105, 'BCC': 0.952869713306427, 'BKL': 1.2071759700775146, 'DF': 13.271706581115723, 'MEL': 0.7000553011894226, 'NV': 0.24593597650527954, 'SCC': 5.037215709686279, 'VASC': 12.521892547607422}
+Cargando modelo hibrido (freeze_backbone=False, dropout_rate=0.3)...
+Loss: CrossEntropy ponderada (label_smoothing=0.0)
+Scheduler: none
+Historial por epoca se guardara en: logs/best_model_e5a_seed1_history.csv
+
+=== Entrenamiento ===
+Epoca 1/30 - train_loss=1.3929 train_acc=0.5631 - val_loss=1.0981 val_acc=0.6645 val_f1_macro=0.4819 - lr=1.00e-05
+  -> Nuevo mejor modelo guardado en checkpoints/best_model_e5a_seed1.pt (val_loss=1.0981, val_f1_macro=0.4819)
+Epoca 2/30 - train_loss=0.9808 train_acc=0.6691 - val_loss=0.9009 val_acc=0.7079 val_f1_macro=0.6105 - lr=1.00e-05
+  -> Nuevo mejor modelo guardado en checkpoints/best_model_e5a_seed1.pt (val_loss=0.9009, val_f1_macro=0.6105)
+Epoca 3/30 - train_loss=0.7964 train_acc=0.7113 - val_loss=0.7933 val_acc=0.7089 val_f1_macro=0.6144 - lr=1.00e-05
+  -> Nuevo mejor modelo guardado en checkpoints/best_model_e5a_seed1.pt (val_loss=0.7933, val_f1_macro=0.6144)
+Epoca 4/30 - train_loss=0.6698 train_acc=0.7444 - val_loss=0.7724 val_acc=0.7697 val_f1_macro=0.7170 - lr=1.00e-05
+  -> Nuevo mejor modelo guardado en checkpoints/best_model_e5a_seed1.pt (val_loss=0.7724, val_f1_macro=0.7170)
+Epoca 5/30 - train_loss=0.5647 train_acc=0.7828 - val_loss=0.7135 val_acc=0.7903 val_f1_macro=0.7269 - lr=1.00e-05
+  -> Nuevo mejor modelo guardado en checkpoints/best_model_e5a_seed1.pt (val_loss=0.7135, val_f1_macro=0.7269)
+Epoca 6/30 - train_loss=0.4673 train_acc=0.8072 - val_loss=0.7270 val_acc=0.7900 val_f1_macro=0.6832 - lr=1.00e-05
+Epoca 7/30 - train_loss=0.3975 train_acc=0.8242 - val_loss=0.6594 val_acc=0.8197 val_f1_macro=0.7512 - lr=1.00e-05
+  -> Nuevo mejor modelo guardado en checkpoints/best_model_e5a_seed1.pt (val_loss=0.6594, val_f1_macro=0.7512)
+Epoca 8/30 - train_loss=0.3344 train_acc=0.8484 - val_loss=0.6762 val_acc=0.8089 val_f1_macro=0.7502 - lr=1.00e-05
+Epoca 9/30 - train_loss=0.2710 train_acc=0.8690 - val_loss=0.7217 val_acc=0.8203 val_f1_macro=0.7608 - lr=1.00e-05
+  -> Nuevo mejor modelo guardado en checkpoints/best_model_e5a_seed1.pt (val_loss=0.7217, val_f1_macro=0.7608)
+Epoca 10/30 - train_loss=0.2294 train_acc=0.8873 - val_loss=0.8034 val_acc=0.8087 val_f1_macro=0.7714 - lr=1.00e-05
+  -> Nuevo mejor modelo guardado en checkpoints/best_model_e5a_seed1.pt (val_loss=0.8034, val_f1_macro=0.7714)
+Epoca 11/30 - train_loss=0.1808 train_acc=0.9015 - val_loss=0.7538 val_acc=0.8361 val_f1_macro=0.7881 - lr=1.00e-05
+  -> Nuevo mejor modelo guardado en checkpoints/best_model_e5a_seed1.pt (val_loss=0.7538, val_f1_macro=0.7881)
+Epoca 12/30 - train_loss=0.1802 train_acc=0.9046 - val_loss=0.7555 val_acc=0.8392 val_f1_macro=0.7921 - lr=1.00e-05
+  -> Nuevo mejor modelo guardado en checkpoints/best_model_e5a_seed1.pt (val_loss=0.7555, val_f1_macro=0.7921)
+Epoca 13/30 - train_loss=0.1392 train_acc=0.9224 - val_loss=0.7756 val_acc=0.8324 val_f1_macro=0.7780 - lr=1.00e-05
+Epoca 14/30 - train_loss=0.1443 train_acc=0.9255 - val_loss=0.7918 val_acc=0.8589 val_f1_macro=0.8028 - lr=1.00e-05
+  -> Nuevo mejor modelo guardado en checkpoints/best_model_e5a_seed1.pt (val_loss=0.7918, val_f1_macro=0.8028)
+Epoca 15/30 - train_loss=0.1414 train_acc=0.9322 - val_loss=0.7897 val_acc=0.8184 val_f1_macro=0.7636 - lr=1.00e-05
+Epoca 16/30 - train_loss=0.1117 train_acc=0.9398 - val_loss=0.7832 val_acc=0.8200 val_f1_macro=0.7953 - lr=1.00e-05
+Epoca 17/30 - train_loss=0.1026 train_acc=0.9481 - val_loss=0.8373 val_acc=0.8484 val_f1_macro=0.8019 - lr=1.00e-05
+Epoca 18/30 - train_loss=0.0705 train_acc=0.9607 - val_loss=0.8332 val_acc=0.8547 val_f1_macro=0.8086 - lr=1.00e-05
+  -> Nuevo mejor modelo guardado en checkpoints/best_model_e5a_seed1.pt (val_loss=0.8332, val_f1_macro=0.8086)
+Epoca 19/30 - train_loss=0.0954 train_acc=0.9512 - val_loss=0.8952 val_acc=0.8508 val_f1_macro=0.8034 - lr=1.00e-05
+Epoca 20/30 - train_loss=0.0601 train_acc=0.9647 - val_loss=1.0351 val_acc=0.8503 val_f1_macro=0.7910 - lr=1.00e-05
+Epoca 21/30 - train_loss=0.0603 train_acc=0.9662 - val_loss=0.9263 val_acc=0.8647 val_f1_macro=0.8321 - lr=1.00e-05
+  -> Nuevo mejor modelo guardado en checkpoints/best_model_e5a_seed1.pt (val_loss=0.9263, val_f1_macro=0.8321)
+Epoca 22/30 - train_loss=0.0661 train_acc=0.9659 - val_loss=1.0671 val_acc=0.8624 val_f1_macro=0.8198 - lr=1.00e-05
+Epoca 23/30 - train_loss=0.0685 train_acc=0.9647 - val_loss=0.9786 val_acc=0.8679 val_f1_macro=0.8173 - lr=1.00e-05
+Epoca 24/30 - train_loss=0.0629 train_acc=0.9690 - val_loss=0.9735 val_acc=0.8542 val_f1_macro=0.8119 - lr=1.00e-05
+Epoca 25/30 - train_loss=0.0417 train_acc=0.9765 - val_loss=0.9954 val_acc=0.8713 val_f1_macro=0.8195 - lr=1.00e-05
+Epoca 26/30 - train_loss=0.0542 train_acc=0.9724 - val_loss=1.0280 val_acc=0.8653 val_f1_macro=0.8186 - lr=1.00e-05
+Epoca 27/30 - train_loss=0.0376 train_acc=0.9797 - val_loss=0.9886 val_acc=0.8655 val_f1_macro=0.8146 - lr=1.00e-05
+Epoca 28/30 - train_loss=0.0407 train_acc=0.9803 - val_loss=1.0631 val_acc=0.8566 val_f1_macro=0.7997 - lr=1.00e-05
+Epoca 29/30 - train_loss=0.0467 train_acc=0.9789 - val_loss=1.1545 val_acc=0.8679 val_f1_macro=0.8224 - lr=1.00e-05
+Epoca 30/30 - train_loss=0.0442 train_acc=0.9795 - val_loss=1.0137 val_acc=0.8700 val_f1_macro=0.8273 - lr=1.00e-05
+
+Cargando mejor checkpoint desde checkpoints/best_model_e5a_seed1.pt para evaluar en test...
+Test loss=0.9023 | Test acc=0.8553 | Test F1 macro=0.8062
+RESULTADO_FINAL split_seed=42 train_seed=1 test_acc=0.8553 test_f1_macro=0.8062 test_f1_weighted=0.8547
+
+=== Metricas en test ===
+Accuracy global: 0.8553
+
+Reporte por clase (precision / recall / F1):
+              precision    recall  f1-score   support
+
+          AK       0.76      0.68      0.72       130
+         BCC       0.87      0.91      0.89       499
+         BKL       0.77      0.74      0.76       394
+          DF       0.88      0.78      0.82        36
+         MEL       0.77      0.79      0.78       678
+          NV       0.91      0.91      0.91      1931
+         SCC       0.71      0.67      0.69        94
+        VASC       0.94      0.84      0.89        38
+
+    accuracy                           0.86      3800
+   macro avg       0.82      0.79      0.81      3800
+weighted avg       0.85      0.86      0.85      3800
+
+Matriz de confusion (filas=real, columnas=prediccion):
+            AK   BCC   BKL    DF   MEL    NV   SCC  VASC
+AK          88    11    11     0     9     1    10     0
+BCC          7   456     4     2     7    20     3     0
+BKL         11    18   292     1    26    38     6     2
+DF           0     4     1    28     2     0     1     0
+MEL          3     6    22     0   533   111     3     0
+NV           1    14    46     1   108  1758     3     0
+SCC          6    16     2     0     6     1    63     0
+VASC         0     2     0     0     3     1     0    32

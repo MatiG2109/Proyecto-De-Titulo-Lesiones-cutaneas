@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Clasificador de Lesiones Cutáneas</title>
+  <link rel="stylesheet" href="assets/style.css?v=2">
+</head>
+<body>
+  <header>
+    <h1>Clasificador de Lesiones Cutáneas <small>(ISIC 2019)</small></h1>
+    <p>Proyecto de Título · Escuela de Ingeniería Informática · PUCV</p>
+  </header>
+
+  <main>
+    <p class="sub">Sube una imagen dermatoscópica de una lesión cutánea para obtener una clasificación automatizada de apoyo diagnóstico.</p>
+
+    <div class="aviso warn">
+      <b>Herramienta de apoyo.</b> No reemplaza el diagnóstico ni el criterio clínico de un profesional de la salud.
+      Todo resultado debe ser confirmado mediante evaluación dermatológica y, de ser necesario, biopsia.
+    </div>
+    <div class="aviso info">
+      <b>Solo imágenes dermatoscópicas.</b> La herramienta fue entrenada exclusivamente con imágenes tomadas con dermatoscopio
+      (luz polarizada, contacto directo con la piel, aumento estandarizado). Con fotografías convencionales, por ejemplo de celular,
+      los resultados pueden no ser confiables.
+    </div>
+    <div class="aviso priv">
+      El análisis se ejecuta en tu propio navegador: la imagen no se envía a ningún servidor.
+    </div>
+
+    <div class="layout">
+      <section class="col">
+        <div class="col-label">Imagen de la lesión</div>
+        <label class="drop" for="file">
+          <img id="preview" alt="Vista previa de la imagen seleccionada" hidden>
+          <span id="dropText">Haz clic para elegir una imagen</span>
+          <input type="file" id="file" accept="image/*" hidden>
+        </label>
+        <button id="btn" type="button">Analizar imagen</button>
+        <progress id="prog" max="100" value="0" hidden></progress>
+        <p id="status" class="status"></p>
+      </section>
+
+      <section class="col">
+        <div class="col-label">Probabilidades por clase</div>
+        <p id="ph" class="ph">Sube una imagen para comenzar.</p>
+        <div id="result" hidden>
+          <h2 id="rTitle"></h2>
+          <p id="rMeta"></p>
+          <div id="bars"></div>
+        </div>
+      </section>
+    </div>
+
+    <p class="nota">La primera vez se descarga el modelo (unos 216 MB); luego queda en la caché del navegador.</p>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/onnxruntime-web@1.20.1/dist/ort.min.js"></script>
+  <script src="assets/app.js?v=2"></script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+# Entornos y caché
+venv/
+.venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.DS_Store
+
+# Pesos y modelos (se publican en Releases)
+*.pt
+*.pth
+*.onnx
+
+# Datos
+data_set/
+dataset/
+dataset_sample/
+
+# Archivos pesados o internos
+*.mp4
+*.pptx
+*.zip
